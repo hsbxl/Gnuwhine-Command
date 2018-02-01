@@ -8,6 +8,7 @@ scheduler = sched.scheduler(time.time, time.sleep)
 pumps = ['p1', 'p2', 'p3', 'p4', 'p5', 'p6', 'p7', 'p8']
 
 GPIO.setmode(GPIO.BCM) # Broadcom pin-numbering scheme
+GPIO.setwarnings(False)
 
 # BCM GPIO pinout
 pump1 = 27
