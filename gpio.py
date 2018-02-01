@@ -33,8 +33,38 @@ while i < len(pumps):
     parser.add_argument('--' + pumps[i])
     i += 1
 
-def stop_pump(pump):
+def stop_pump1(pump):
+    GPIO.output(p1, GPIO.LOW)
     print 'stop pump', pump, '@', time.time()
+
+def stop_pump2(pump):
+    GPIO.output(p2, GPIO.LOW)
+    print 'stop pump', pump, '@', time.time()
+
+def stop_pump3(pump):
+    GPIO.output(p3, GPIO.LOW)
+    print 'stop pump', pump, '@', time.time()
+
+def stop_pump4(pump):
+    GPIO.output(p4, GPIO.LOW)
+    print 'stop pump', pump, '@', time.time()
+
+def stop_pump5(pump):
+    GPIO.output(p5, GPIO.LOW)
+    print 'stop pump', pump, '@', time.time()
+
+def stop_pump6(pump):
+    GPIO.output(p6, GPIO.LOW)
+    print 'stop pump', pump, '@', time.time()
+
+def stop_pump7(pump):
+    GPIO.output(p7, GPIO.LOW)
+    print 'stop pump', pump, '@', time.time()
+
+def stop_pump8(pump):
+    GPIO.output(p8, GPIO.LOW)
+    print 'stop pump', pump, '@', time.time()
+
 
 args = parser.parse_args()
 
@@ -42,7 +72,6 @@ args = parser.parse_args()
 if args.p1:
     GPIO.output(p1, GPIO.HIGH)
     print 'start pump 1 @', time.time()
-    GPIO.output(ledPin, GPIO.LOW)
     scheduler.enter(float(args.p1), 1, stop_pump, ('1'))
 
 #pump2
