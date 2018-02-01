@@ -109,7 +109,7 @@ if args.p3:
 if args.p7:
     GPIO.output(pump7, GPIO.HIGH)
     print 'start pump 7 @', time.time()
-    scheduler.enter(float(args.p3), 1, stop_pump7, ('7'))
+    scheduler.enter(float(args.p7), 1, stop_pump7, ('7'))
 
 #pump8
 if args.p8:
