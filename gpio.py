@@ -72,49 +72,49 @@ args = parser.parse_args()
 if args.p1:
     GPIO.output(p1, GPIO.HIGH)
     print 'start pump 1 @', time.time()
-    scheduler.enter(float(args.p1), 1, stop_pump, ('1'))
+    scheduler.enter(float(args.p1), 1, stop_pump1, ('1'))
 
 #pump2
 if args.p2:
     GPIO.output(p2, GPIO.HIGH)
     print 'start pump 2 @', time.time()
-    scheduler.enter(float(args.p2), 1, stop_pump, ('2'))
+    scheduler.enter(float(args.p2), 1, stop_pump2, ('2'))
 
 #pump3
 if args.p3:
     GPIO.output(p3, GPIO.HIGH)
     print 'start pump 3 @', time.time()
-    scheduler.enter(float(args.p3), 1, stop_pump, ('3'))
+    scheduler.enter(float(args.p3), 1, stop_pump3, ('3'))
 
 #pump4
 if args.p4:
     GPIO.output(p4, GPIO.HIGH)
     print 'start pump 4 @', time.time()
-    scheduler.enter(float(args.p4), 1, stop_pump, ('4'))
+    scheduler.enter(float(args.p4), 1, stop_pump4, ('4'))
 
 #pump5
 if args.p3:
     GPIO.output(p5, GPIO.HIGH)
     print 'start pump 5 @', time.time()
-    scheduler.enter(float(args.p5), 1, stop_pump, ('5'))
+    scheduler.enter(float(args.p5), 1, stop_pump5, ('5'))
 
 #pump6
 if args.p3:
     GPIO.output(p6, GPIO.HIGH)
     print 'start pump 6 @', time.time()
-    scheduler.enter(float(args.p6), 1, stop_pump, ('6'))
+    scheduler.enter(float(args.p6), 1, stop_pump6, ('6'))
 
 #pump7
 if args.p7:
     GPIO.output(p7, GPIO.HIGH)
     print 'start pump 7 @', time.time()
-    scheduler.enter(float(args.p3), 1, stop_pump, ('7'))
+    scheduler.enter(float(args.p3), 1, stop_pump7, ('7'))
 
 #pump8
 if args.p8:
     GPIO.output(p8, GPIO.HIGH)
     print 'start pump 8 @', time.time()
-    scheduler.enter(float(args.p8), 1, stop_pump, ('8'))
+    scheduler.enter(float(args.p8), 1, stop_pump8, ('8'))
 
 
 scheduler.run()
