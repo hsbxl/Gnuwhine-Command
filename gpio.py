@@ -94,13 +94,13 @@ if args.p4:
     scheduler.enter(float(args.p4), 1, stop_pump4, ('4'))
 
 #pump5
-if args.p3:
+if args.p5:
     GPIO.output(pump5, GPIO.HIGH)
     print 'start pump 5 @', time.time()
     scheduler.enter(float(args.p5), 1, stop_pump5, ('5'))
 
 #pump6
-if args.p3:
+if args.p6:
     GPIO.output(pump6, GPIO.HIGH)
     print 'start pump 6 @', time.time()
     scheduler.enter(float(args.p6), 1, stop_pump6, ('6'))
